@@ -1,21 +1,15 @@
 nagios3 Cookbook
 ================
-[![Build Status](https://travis-ci.org/DennyZhang/nagios3.svg?branch=master)](https://travis-ci.org/DennyZhang/nagios3)
-Install and Configure nagios3 monitor with nagiosgraph and common checks predefined
-
-No special configuration is required to enforce the basic checks.
-
-![](https://github.com/DennyZhang/nagios3/raw/master/nagios1.png)
-![](https://github.com/DennyZhang/nagios3/raw/master/nagios2.png)
 
 Requirements
 ------------
 ### Platform
-- Debian/Ubuntu
-- RHEL/CentOS/Scientific
-- Fedora
-- ArchLinux
-- FreeBSD
+- CentOS 7
+
+yum install httpd && yum install epel-release
+mkdir /var/log/nagios/spool/checkresults 
+chmod -R 777 /var/log/nagios/spool/checkresults
+
 
 Recipes
 -------
@@ -70,11 +64,6 @@ And we want to deploy nagios system like: 192.168.1.3 as nagios server, all othe
   }
 }
 ```
-
-License & Authors
------------------
-- Author:: DennyZhang001 <denny@dennyzhang.com>
-- Copyright:: 2015, http://DennyZhang.com
 
 ```text
 
